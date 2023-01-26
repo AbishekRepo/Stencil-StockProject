@@ -6,34 +6,32 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface AbSideDrawer {
-        "title": string;
+    interface AbAtockPrice {
     }
 }
 declare global {
-    interface HTMLAbSideDrawerElement extends Components.AbSideDrawer, HTMLStencilElement {
+    interface HTMLAbAtockPriceElement extends Components.AbAtockPrice, HTMLStencilElement {
     }
-    var HTMLAbSideDrawerElement: {
-        prototype: HTMLAbSideDrawerElement;
-        new (): HTMLAbSideDrawerElement;
+    var HTMLAbAtockPriceElement: {
+        prototype: HTMLAbAtockPriceElement;
+        new (): HTMLAbAtockPriceElement;
     };
     interface HTMLElementTagNameMap {
-        "ab-side-drawer": HTMLAbSideDrawerElement;
+        "ab-atock-price": HTMLAbAtockPriceElement;
     }
 }
 declare namespace LocalJSX {
-    interface AbSideDrawer {
-        "title"?: string;
+    interface AbAtockPrice {
     }
     interface IntrinsicElements {
-        "ab-side-drawer": AbSideDrawer;
+        "ab-atock-price": AbAtockPrice;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "ab-side-drawer": LocalJSX.AbSideDrawer & JSXBase.HTMLAttributes<HTMLAbSideDrawerElement>;
+            "ab-atock-price": LocalJSX.AbAtockPrice & JSXBase.HTMLAttributes<HTMLAbAtockPriceElement>;
         }
     }
 }
